@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FinAI - AI Loan Eligibility Checker & BFSI Financial Assistant</title>
+  <meta name="description" content="Know your loan eligibility before you apply. AI-powered loan eligibility checker, credit score analyzer, EMI calculator, and financial guidance for Indian borrowers.">
+  
+  <!-- Google Fonts: Inter -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@500;700&display=swap" rel="stylesheet">
+  
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+
+  <!-- Ambient Background Lighting -->
+  <div class="ambient-glow ambient-glow-1"></div>
+  <div class="ambient-glow ambient-glow-2"></div>
+  <div class="ambient-glow ambient-glow-3"></div>
+
+  <!-- Navigation Bar -->
+  <header>
+    <nav class="navbar" aria-label="Main Navigation">
+      <a href="index.html" class="brand-logo" aria-label="FinAI Home">
+        <div class="logo-badge">F</div>
+        <span>FinAI</span>
+      </a>
+
+      <ul class="nav-links">
+        <li><a href="#home" class="nav-link active">Home</a></li>
+        <li><a href="#features" class="nav-link">Features</a></li>
+        <li><a href="#how-it-works" class="nav-link">How It Works</a></li>
+        <li><a href="#about" class="nav-link">About</a></li>
+      </ul>
+
+      <div class="nav-cta">
+        <a href="dashboard.html#eligibility" class="btn btn-primary btn-sm">
+          <span>Check Eligibility</span>
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="9 18 15 12 9 6"></polyline></svg>
+        </a>
+        <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Open Navigation Menu">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <main>
+    <section class="hero-section" id="home">
+      <div class="hero-container">
+        
+        <!-- Left Content Column -->
+        <div class="hero-content">
+          <div class="hero-pill">
+            <span class="status-dot online"></span>
+            <span>Next-Gen BFSI Intelligence Platform</span>
+          </div>
+
+          <h1 class="hero-title">
+            Know Your <span class="gradient-accent">Loan Eligibility</span> Before You Apply
+          </h1>
+
+          <p class="hero-subhead">
+            Get an AI-powered assessment of your loan eligibility, credit profile, EMI affordability, and personalized financial insights — all in one place.
+          </p>
+
+          <div class="hero-actions">
+            <a href="dashboard.html#eligibility" class="btn btn-primary btn-lg">
+              <span>Check My Eligibility</span>
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+            </a>
+            <a href="dashboard.html" class="btn btn-secondary btn-lg">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="7" height="7"></rect><rect x="14" y="3" width="7" height="7"></rect><rect x="14" y="14" width="7" height="7"></rect><rect x="3" y="14" width="7" height="7"></rect></svg>
+              <span>Explore Tools</span>
+            </a>
+          </div>
+
+          <!-- Trust / Key Financial Standards -->
+          <div class="hero-trust-badges">
+            <div class="trust-item">
+              <span class="trust-num">FOIR</span>
+              <span class="trust-label">Banking Standards</span>
+            </div>
+            <div class="trust-item">
+              <span class="trust-num">₹100%</span>
+              <span class="trust-label">INR Optimized</span>
+            </div>
+            <div class="trust-item">
+              <span class="trust-num">Claude AI</span>
+              <span class="trust-label">Powered Insights</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right Visual Showcase Column -->
+        <div class="hero-visual">
+          <div class="hero-card-stack">
+            
+            <!-- Floating Badge Top Right -->
+            <div class="hero-floating-badge floating-badge-1">
+              <span class="status-dot online"></span>
+              <span>Low Risk Borrower Profile</span>
+            </div>
+
+            <!-- Central Glass Card Preview -->
+            <div class="glass-card hero-main-card">
+              <div class="hero-card-header">
+                <div>
+                  <div class="hero-card-title">Applicant Assessment Preview</div>
+                  <small style="color: var(--text-subtle);">Based on standard BFSI assumptions</small>
+                </div>
+                <span class="badge badge-success">High Probability</span>
+              </div>
+
+              <!-- 4 Live Metric Tiles -->
+              <div class="hero-metrics-grid">
+                <div class="hero-metric-tile">
+                  <span class="hero-metric-label">Eligibility Score</span>
+                  <span class="hero-metric-val" style="color: var(--success);">78%</span>
+                  <span class="hero-metric-sub" style="color: #4ADE80;">Good Standing</span>
+                </div>
+
+                <div class="hero-metric-tile">
+                  <span class="hero-metric-label">Credit Score</span>
+                  <span class="hero-metric-val" style="color: var(--primary-light);">742</span>
+                  <span class="hero-metric-sub" style="color: var(--accent);">Good Category</span>
+                </div>
+
+                <div class="hero-metric-tile">
+                  <span class="hero-metric-label">Estimated EMI</span>
+                  <span class="hero-metric-val">₹21,494</span>
+                  <span class="hero-metric-sub" style="color: var(--text-muted);">at 10.5% (5 Years)</span>
+                </div>
+
+                <div class="hero-metric-tile">
+                  <span class="hero-metric-label">Max Capacity</span>
+                  <span class="hero-metric-val" style="color: var(--accent);">₹18,50,000</span>
+                  <span class="hero-metric-sub" style="color: var(--text-muted);">50% FOIR Ceiling</span>
+                </div>
+              </div>
+
+              <!-- AI Insight Preview Snippet -->
+              <div class="hero-ai-insight-box">
+                <div class="ai-icon-mini">AI</div>
+                <div class="ai-insight-text">
+                  <strong>FinAI Advisor Insight:</strong> "With a Debt-to-Income ratio of 28% and disposable buffer of ₹42,000, your profile qualifies comfortably for prime personal loan interest rates."
+                </div>
+              </div>
+            </div>
+
+            <!-- Floating Badge Bottom Left -->
+            <div class="hero-floating-badge floating-badge-2">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#00D4FF" stroke-width="2.5"><polyline points="23 6 13.5 15.5 8.5 10.5 1 18"></polyline><polyline points="17 6 23 6 23 12"></polyline></svg>
+              <span>Real-Time EMI Amortization</span>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="section-wrapper" id="features">
+      <div class="section-container">
+        
+        <div class="section-header">
+          <span class="section-pill">Unified Suite</span>
+          <h2 class="section-title">Four Powerful Financial Tools, One Platform</h2>
+          <p class="section-subtitle">
+            Engineered with retail banking algorithms to give you clear, objective visibility into your borrowing power before submitting formal applications.
+          </p>
+        </div>
+
+        <div class="features-grid">
+          
+          <!-- Tool 1: Eligibility Checker -->
+          <div class="glass-card feature-card">
+            <div class="feature-icon-box icon-blue">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg>
+            </div>
+            <h3 class="feature-title">Loan Eligibility Checker</h3>
+            <p class="feature-desc">
+              Comprehensive FOIR assessment factoring monthly income, obligations, living expenses, tenure, and credit score into an animated score with risk categorizations.
+            </p>
+            <a href="dashboard.html#eligibility" class="btn btn-outline btn-sm" style="margin-top: auto;">Open Checker &rarr;</a>
+          </div>
+
+          <!-- Tool 2: Credit Score Analyzer -->
+          <div class="glass-card feature-card">
+            <div class="feature-icon-box icon-cyan">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><path d="M12 6v6l4 2"></path></svg>
+            </div>
+            <h3 class="feature-title">Credit Score Analyzer</h3>
+            <p class="feature-desc">
+              Interactive 300–900 scale visualizer with credit health categorizations, risk meters, and detailed breakdowns of payment history and card utilization.
+            </p>
+            <a href="dashboard.html#credit" class="btn btn-outline btn-sm" style="margin-top: auto;">Analyze Credit &rarr;</a>
+          </div>
+
+          <!-- Tool 3: EMI Calculator -->
+          <div class="glass-card feature-card">
+            <div class="feature-icon-box icon-purple">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="4" width="20" height="16" rx="2"></rect><line x1="6" y1="8" x2="6" y2="8"></line><line x1="10" y1="8" x2="10" y2="8"></line><line x1="14" y1="8" x2="14" y2="8"></line><line x1="18" y1="8" x2="18" y2="8"></line><line x1="6" y1="12" x2="18" y2="12"></line><line x1="6" y1="16" x2="18" y2="16"></line></svg>
+            </div>
+            <h3 class="feature-title">Dynamic EMI Calculator</h3>
+            <p class="feature-desc">
+              Mathematical formula-based calculator with real-time recalculations, SVG donut charts for principal vs. interest splits, and year-by-year amortization schedules.
+            </p>
+            <a href="dashboard.html#emi" class="btn btn-outline btn-sm" style="margin-top: auto;">Calculate EMI &rarr;</a>
+          </div>
+
+          <!-- Tool 4: AI Financial Tips -->
+          <div class="glass-card feature-card">
+            <div class="feature-icon-box icon-green">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path></svg>
+            </div>
+            <h3 class="feature-title">AI Financial Tips</h3>
+            <p class="feature-desc">
+              Conversational advisor powered by Claude AI on the backend. Provides context-aware answers to loan affordability, debt payoff strategies, and credit management.
+            </p>
+            <a href="dashboard.html#ai" class="btn btn-outline btn-sm" style="margin-top: auto;">Ask FinAI &rarr;</a>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- How It Works Section -->
+    <section class="section-wrapper" id="how-it-works" style="background: rgba(13, 19, 33, 0.4);">
+      <div class="section-container">
+        
+        <div class="section-header">
+          <span class="section-pill">Simple Workflow</span>
+          <h2 class="section-title">How FinAI Works</h2>
+          <p class="section-subtitle">
+            Three simple steps to assess your financial health without impacting your credit score.
+          </p>
+        </div>
+
+        <div class="steps-grid">
+          
+          <div class="glass-card step-card">
+            <span class="step-number">01</span>
+            <h3 class="step-title">Enter Financial Parameters</h3>
+            <p class="feature-desc">
+              Provide your monthly income, living expenses, existing loan EMIs, and desired loan parameters. You can also use our 1-click Demo Fill button.
+            </p>
+          </div>
+
+          <div class="glass-card step-card">
+            <span class="step-number">02</span>
+            <h3 class="step-title">Automated BFSI Analysis</h3>
+            <p class="feature-desc">
+              Our calculation engine applies FOIR thresholds, computes Debt-to-Income (DTI), checks credit tier contributions, and estimates maximum loan principal.
+            </p>
+          </div>
+
+          <div class="glass-card step-card">
+            <span class="step-number">03</span>
+            <h3 class="step-title">Actionable Insights & Guidance</h3>
+            <p class="feature-desc">
+              Review your visual eligibility score, repayment amortization, and consult our Claude-powered AI assistant for tailored strategies to improve terms.
+            </p>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- About & Trust Section -->
+    <section class="section-wrapper" id="about">
+      <div class="section-container">
+        <div class="glass-panel" style="padding: 48px; border-radius: var(--border-radius-xl); text-align: center; max-width: 960px; margin: 0 auto;">
+          <h2 style="font-size: 2rem; margin-bottom: 16px;">Built for Indian Borrowers & BFSI Transparency</h2>
+          <p style="font-size: 1.05rem; color: var(--text-muted); line-height: 1.7; margin-bottom: 28px;">
+            FinAI was developed to bridge the information gap in retail lending. Applying blindly for multiple loans can trigger hard credit inquiries that pull down your CIBIL/Experian score. With FinAI, you can evaluate your eligibility, understand bank FOIR constraints, and plan smart repayments before stepping into a branch.
+          </p>
+          <div style="display: flex; gap: 16px; justify-content: center; flex-wrap: wrap;">
+            <a href="dashboard.html" class="btn btn-primary btn-lg">Launch Financial Dashboard</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Legal / Financial Disclaimer Banner -->
+  <aside class="disclaimer-banner" aria-label="Legal Disclaimer">
+    <div style="max-width: 1200px; margin: 0 auto;">
+      <strong>IMPORTANT FINANCIAL DISCLAIMER:</strong> This tool provides estimates for educational and informational purposes only. It does not constitute financial advice, credit approval, or a guarantee of loan eligibility. Actual lending decisions are made by individual financial institutions based on their own policies, verification processes, and applicable regulations.
+    </div>
+  </aside>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="footer-container">
+      
+      <div class="footer-brand">
+        <a href="index.html" class="brand-logo">
+          <div class="logo-badge">F</div>
+          <span>FinAI</span>
+        </a>
+        <p>AI-powered personal finance and loan eligibility evaluation platform built on BFSI underwriting standards.</p>
+      </div>
+
+      <div>
+        <h4 class="footer-col-title">Financial Tools</h4>
+        <ul class="footer-links">
+          <li><a href="dashboard.html#eligibility" class="footer-link">Loan Eligibility Checker</a></li>
+          <li><a href="dashboard.html#credit" class="footer-link">Credit Score Analyzer</a></li>
+          <li><a href="dashboard.html#emi" class="footer-link">EMI Amortization Calculator</a></li>
+          <li><a href="dashboard.html#ai" class="footer-link">AI Financial Tips</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h4 class="footer-col-title">Key Terminology</h4>
+        <ul class="footer-links">
+          <li><a href="dashboard.html#overview" class="footer-link">FOIR (Fixed Obligation Ratio)</a></li>
+          <li><a href="dashboard.html#overview" class="footer-link">DTI (Debt-to-Income)</a></li>
+          <li><a href="dashboard.html#credit" class="footer-link">Credit Utilization Ratio</a></li>
+          <li><a href="dashboard.html#emi" class="footer-link">Amortization Schedules</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h4 class="footer-col-title">Architecture</h4>
+        <ul class="footer-links">
+          <li><a href="dashboard.html" class="footer-link">Dashboard Overview</a></li>
+          <li><span class="footer-link" style="color: var(--text-subtle);">REST API Backend</span></li>
+          <li><span class="footer-link" style="color: var(--text-subtle);">Claude AI Integration</span></li>
+          <li><span class="footer-link" style="color: var(--text-subtle);">Google Sheets Sync</span></li>
+        </ul>
+      </div>
+
+    </div>
+
+    <div class="footer-bottom">
+      <div>&copy; 2026 FinAI. All rights reserved. Open-source educational project.</div>
+      <div>Designed with Dark Glassmorphism for Fintech & BFSI</div>
+    </div>
+  </footer>
+
+  <script>
+    // Smooth scroll for anchor links
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        const href = this.getAttribute('href');
+        if (href !== '#' && href.startsWith('#')) {
+          const target = document.querySelector(href);
+          if (target) {
+            e.preventDefault();
+            target.scrollIntoView({ behavior: 'smooth' });
+          }
+        }
+      });
+    });
+  </script>
+</body>
+</html>
